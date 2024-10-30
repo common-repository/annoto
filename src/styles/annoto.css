@@ -1,0 +1,230 @@
+div.annoto-bootstrap {
+    margin-top: 16px;
+}
+
+.annoto-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+}
+
+.annoto-switch input {
+    display: none;
+}
+
+.annoto-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.annoto-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .annoto-slider {
+    background-color: #00a09a;
+}
+
+input:focus + .annoto-slider {
+    box-shadow: 0 0 1px #00a09a;
+}
+
+input:checked + .annoto-slider:before {
+    -webkit-transform: translateX(33px);
+    -ms-transform: translateX(33px);
+    transform: translateX(33px);
+}
+
+.annoto-slider.round {
+    border-radius: 34px;
+}
+
+.annoto-slider.round:before {
+    border-radius: 50%;
+}
+
+.annoto-bootstrap .btn.annoto-dropdown-button {
+    width: 10em;
+    text-align: left;
+}
+
+.display-none {
+    display: none;
+}
+
+.annoto-notification {
+    position: fixed;
+    top: 32px;
+    right: 0;
+    z-index: 99999;
+}
+
+.annoto-notification .alert {
+    font-size: 130%;
+    width: 20em;
+}
+
+.annoto-notification .notification-header {
+    margin-bottom: 16px;
+}
+
+.annoto-input-group {
+    padding: 2px 16px;
+}
+
+.annoto-icon-image {
+    width: 19px;
+}
+
+.onoffswitch {
+    position: relative;
+    width: 90px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 0;
+}
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin .3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 26px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #eeeeee;
+    color: #666666;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #eeeeee;
+    color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block;
+    width: 39px;
+    margin: 0;
+    background: #a1a1a1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 51px;
+    transition: all .3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0;
+    background-color: #00a09a;
+}
+
+.annoto-bootstrap .panel-grey {
+    border-color: #eeeeee;
+}
+
+.panel-white {
+    box-shadow: none;
+}
+
+.annoto-bootstrap .panel.panel-right-grey {
+    border-right: 1px solid lightgrey;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.annoto-bootstrap .panel-primary.annoto-panel {
+    border-color: #ea5451;
+}
+
+.annoto-bootstrap .panel-primary.annoto-panel > .panel-heading {
+    background-color: #ea5451;
+    border-color: #ea5451;
+}
+
+.annoto-bootstrap .annoto-masthead_logo {
+    height: 40px;
+    width: 191px;
+}
+
+.annoto-bootstrap .submit-block .btn-primary.annoto-save {
+    background-color: #ea5451;
+    border-color: #ea5451;
+}
+
+.annoto-bootstrap .submit-block .btn-primary.annoto-save:hover {
+    background-color: #cd5451;
+    border-color: #cd5451;
+}
+
+.annoto-bootstrap .top-buffer {
+    margin-top: 2em;
+}
+
+@media (max-width: 782px) {
+    .annoto-notification {
+        top: 46px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .annoto-bootstrap .btn.annoto-dropdown-button {
+        width: 15em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .form-horizontal .panel-settings .control-label.setting-label {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .annoto-bootstrap .panel.panel-right-grey {
+        border-right: 0;
+    }
+}
